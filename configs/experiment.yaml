@@ -1,0 +1,17 @@
+
+# Experiment/global settings
+horizon_sec: 2.0
+dt_target: 0.01           # 10 ms (100 Hz)
+mu_values: [0.3, 0.5, 0.8]
+v0_values: [30, 60, 120]   # km/h
+psi_bins: 8               # heading bins for 3D alpha-shapes
+alpha_candidates: [0.5, 1.0, 1.5]
+scales:                   # normalization scales for (Δx, Δy, v)
+  L: 10.0
+  V: 30.0
+  Psi: 0.5
+hausdorff_budget:         # de-normalized budgets (approx)
+  dx: 0.2
+  dy: 0.2
+  dv: 0.5
+  dpsi: 0.05

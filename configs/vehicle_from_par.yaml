@@ -1,0 +1,9 @@
+vehicle:
+  m_kg: 1413.0
+  Iz_kgm2: 1579.092
+  lf_m: 1.015
+  lr_m: 1.895
+  track_m: 1.54
+  h_cg_m: 0.54
+  Cf0_Nprad_front: 120000.0
+  Cr0_Nprad_rear: 100000.0

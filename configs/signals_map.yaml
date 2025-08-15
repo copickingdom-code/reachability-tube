@@ -1,0 +1,22 @@
+
+# Map your CarSim CSV headers to canonical names used by this repo.
+# Fill the right-hand side with your exact column titles if different.
+
+canonical_to_candidates:
+  time: ["Time", "time"]
+  x: ["X (m)", "CG X (m)", "Global X", "x"]
+  y: ["Y (m)", "CG Y (m)", "Global Y", "y"]
+  psi: ["Yaw (rad)", "psi (rad)", "Yaw (deg)", "psi (deg)"]
+  v: ["Speed (m/s)", "Speed (kph)", "V (m/s)"]
+  r: ["Yaw Rate (rad/s)", "YawRate (rad/s)", "Yaw Rate (deg/s)"]
+  ax: ["Long Accel (m/s^2)", "Ax (m/s^2)", "Longitudinal Acceleration"]
+  ay: ["Lat Accel (m/s^2)", "Ay (m/s^2)", "Lateral Acceleration"]
+  delta: ["Steer Angle (deg)", "Handwheel Angle (deg)", "Steer Angle (rad)"]
+  throttle: ["Throttle", "Throttle (%)"]
+  brake: ["Brake", "Brake Pressure", "Brake (%)"]
+  u_body: ["U-Vel (m/s)", "Ux (m/s)"]
+  v_body: ["V-Vel (m/s)", "Uy (m/s)"]
+  beta: ["Sideslip (deg)", "Beta (deg)", "Sideslip (rad)"]
+
+# If your CSV contains degrees or kph, the ingestion script auto-converts to SI.
+# You can also set overrides in configs/experiment.yaml
