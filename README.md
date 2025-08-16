@@ -10,11 +10,11 @@
 
 ## TL;DR
 
-- `scripts/build_tube.py`：生成按时间切片的可达性管（4D 特征，默认 `Δx, Δy, v, ψ`），并保存关键帧与几何数据。
+- `scripts/build_tube_bins.py`：生成按时间切片的可达性管（4D 特征，默认 `Δx, Δy, v, ψ`），并保存关键帧与几何数据。
 - `scripts/metrics_convergence.py`：计算时间积分 4D 体积、相邻切片 Hausdorff 漂移等收敛性指标。
-- `scripts/fit_mu_scaling.py`：拟合摩擦缩放律 `Vol ≈ C μ^p` 并输出拟合图（Fig 2）。
-- `scripts/eval_s2t.py`：对 216 个极端场景做 Tube 几何判定评估（Rule A / Rule B），导出混淆矩阵和分组表。
-- `scripts/plot_figures.py`：批量导出主要图（如每 μ 的切片叠加图、收敛曲线、PR/阈值 sweep 等）。
+- `scripts/mu_scaling_4d.py`：拟合摩擦缩放律 `Vol ≈ C μ^p` 并输出拟合图。
+- `scripts/s2t_eval.py`：对 216 个极端场景做 Tube 几何判定评估（Rule A / Rule B），导出混淆矩阵和分组表。
+- `run_all.bat`:运行工程脚本
 
 ---
 
