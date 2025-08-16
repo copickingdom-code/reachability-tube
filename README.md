@@ -14,7 +14,7 @@
 - `scripts/metrics_convergence.py`：计算时间积分 4D 体积、相邻切片 Hausdorff 漂移等收敛性指标。
 - `scripts/mu_scaling_4d.py`：拟合摩擦缩放律 `Vol ≈ C μ^p` 并输出拟合图。
 - `scripts/s2t_eval.py`：对 216 个极端场景做 Tube 几何判定评估（Rule A / Rule B），导出混淆矩阵和分组表。
-- `run_all.bat`:运行工程脚本
+- `run_all.bat`：运行工程脚本
 
 ---
 
