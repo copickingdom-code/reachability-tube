@@ -45,8 +45,8 @@ echo [06c] slice_overlays
 echo [06d] terminal_envelope
 "%PY%" "scripts\06d_draw_terminal_envelope.py" >> "%LOG%" 2>&1
 
-echo [06e] mu_scaling
-"%PY%" "scripts\06e_mu_scaling.py" >> "%LOG%" 2>&1
+@REM echo [06e] mu_scaling_2d
+@REM "%PY%" "scripts\06e_mu_scaling_2d.py" >> "%LOG%" 2>&1
 
 echo [06f] tube_3d
 "%PY%" "scripts\06f_plot_tube_3d.py" >> "%LOG%" 2>&1
@@ -80,6 +80,21 @@ echo [07f] plot_s2t_sweep
 
 echo [99] pack outputs
 "%PY%" "scripts\99_pack_outputs.py" >> "%LOG%" 2>&1
+
+echo [06e] mu_scaling_4d
+"%PY%" "scripts\06e_mu_scaling_4d.py" >> "%LOG%" 2>&1
+
+echo [04b] 04b_volume4d_timeseries
+"%PY%" "scripts\04b_volume4d_timeseries.py" >> "%LOG%" 2>&1
+
+echo [baselines] pilot_baselines
+"%PY%" "scripts\baselines\eval_pilot_baselines.py" >> "%LOG%" 2>&1
+
+echo [closed loop] closed_loop
+"%PY%" "scripts/closedloop/aeb_gate_eval.py" >> "%LOG%" 2>&1
+
+echo [analysis] monotonicity_timeseries
+"%PY%" "scripts/analysis/monotonicity_timeseries.py" >> "%LOG%" 2>&1
 
 echo Done. Outputs under .\outputs\
 echo (Log: %LOG%)

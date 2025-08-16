@@ -45,8 +45,16 @@ echo ===== VehicleTube Paper A pipeline ===== > "%LOG%"
 @REM echo [06d] terminal_envelope
 @REM "%PY%" "scripts\06d_draw_terminal_envelope.py" >> "%LOG%" 2>&1
 @REM
-@REM echo [06e] mu_scaling
-@REM "%PY%" "scripts\06e_mu_scaling.py" >> "%LOG%" 2>&1
+
+
+echo [04b] 04b_volume4d_timeseries
+"%PY%" "scripts\04b_volume4d_timeseries.py" >> "%LOG%" 2>&1
+
+@REM echo [06e] mu_scaling_2d
+@REM "%PY%" "scripts\06e_mu_scaling_2d.py" >> "%LOG%" 2>&1
+
+echo [06e] mu_scaling_4d
+"%PY%" "scripts\06e_mu_scaling_4d.py" >> "%LOG%" 2>&1
 @REM
 @REM echo [06f] tube_3d
 @REM "%PY%" "scripts\06f_plot_tube_3d.py" >> "%LOG%" 2>&1
@@ -57,8 +65,8 @@ echo ===== VehicleTube Paper A pipeline ===== > "%LOG%"
 @REM echo [06] build_figures
 @REM "%PY%" "scripts\06_figures.py" >> "%LOG%" 2>&1
 
-echo [06h] build_convergence
-"%PY%" "scripts\06h_convergence_metrics.py" >> "%LOG%" 2>&1
+@REM echo [06h] build_convergence
+@REM "%PY%" "scripts\06h_convergence_metrics.py" >> "%LOG%" 2>&1
 
 @REM echo [06] build_LTV
 @REM "%PY%" "scripts\06b_identify_A_LTV.py" >> "%LOG%" 2>&1
